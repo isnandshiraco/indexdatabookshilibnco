@@ -463,7 +463,7 @@
         `;
       });
 
-      pageInfoEl.textContent = `Menampilkan ${awal + 1}-${akhir} dari ${hasilBuku.length} data. Halaman ${halamanAktif}/${totalHalaman}.`;
+      pageInfoEl.textContent = `Menampilkan Halaman ${halamanAktif}/${totalHalaman}.`;
       prevPageBtn.disabled = halamanAktif === 1;
       nextPageBtn.disabled = halamanAktif === totalHalaman;
       pagerEl.classList.toggle("is-visible", totalHalaman > 1);
