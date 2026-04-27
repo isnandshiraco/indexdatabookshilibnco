@@ -142,8 +142,8 @@ Database asli tidak lagi diambil dari browser.
 
 Tetapi hasil pencarian tetap publik. Supaya data tidak mudah disalin seluruhnya, API ini:
 
-- wajib minimal 2 huruf pencarian,
-- hanya mengembalikan maksimal 25 hasil,
+- wajib minimal 3 huruf pencarian,
+- hanya mengembalikan maksimal 10 hasil,
 - tidak menyediakan endpoint untuk mengambil semua buku.
 
 Kalau datanya sangat sensitif, tambahkan login, rate limit, atau pindahkan data ke database yang punya kontrol akses lebih kuat.

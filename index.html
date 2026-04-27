@@ -177,7 +177,7 @@
         <input type="text" id="search" placeholder="Cari buku, penulis, atau genre...">
       </div>
 
-      <div id="status" class="status">Ketik minimal 2 huruf untuk mencari buku.</div>
+      <div id="status" class="status">Ketik minimal 3 huruf untuk mencari buku.</div>
       <div id="result" class="grid" aria-live="polite"></div>
     </section>
   </main>
@@ -194,9 +194,9 @@
       const keyword = this.value.trim();
       clearTimeout(searchTimer);
 
-      if (keyword.length < 2) {
+      if (keyword.length < 3) {
         resultEl.innerHTML = "";
-        statusEl.textContent = "Ketik minimal 2 huruf untuk mencari buku.";
+        statusEl.textContent = "Ketik minimal 3 huruf untuk mencari buku.";
         return;
       }
 
