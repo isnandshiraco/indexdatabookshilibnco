@@ -1,6 +1,6 @@
 import { google } from "googleapis";
 
-const MAX_RESULTS = 17;
+const MAX_RESULTS = 100;
 const MIN_QUERY_LENGTH = 3;
 
 export default async function handler(req, res) {
