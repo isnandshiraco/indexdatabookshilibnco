@@ -319,7 +319,7 @@
               <option value="penulis">Penulis</option>
               <option value="genre">Genre</option>
               <option value="penerbit">Penerbit</option>
-              <option value="tahun">Tahun</option>
+              <option value="bahasa">Bahasa</option>
             </select>
           </label>
         </div>
@@ -458,7 +458,7 @@
               <div class="meta">${escapeHTML(buku.penulis || "Penulis belum tercatat")}</div>
               <div class="meta">${escapeHTML(buku.genre || "Genre belum tercatat")} - ${escapeHTML(buku.penerbit || "Penerbit belum tercatat")}</div>
             </div>
-            <div class="year">${escapeHTML(buku.tahun || "-")}</div>
+            <div class="year">${escapeHTML(buku.bahasa || "-")}</div>
           </article>
         `;
       });
